@@ -11,13 +11,23 @@ def printName(file_name):
 
 def multiplication_pattern(height):
     for i in range(1,height+1):
-        for x in range(1,height):
-            print(x*i)
+        for x in range(1,i+1):
+            print(i*x,end ='  ')
+        print()
+    #print()
 
   
 
 def number_pyramid(height):
-    pass
+    row=1
+    for i in range(1,height+1):
+        for x in range(i):
+            print(row,end=" ")
+            row+=1
+        print()
+        print()
+      
+    
 
 def triangle(height):
     for i in range(1,height+1):
@@ -25,7 +35,7 @@ def triangle(height):
 
 
 if __name__ == "__main__":
-    print("my.txt")  # Replace file.txt with your file
-   # multiplication_pattern(4)
-    number_pyramid(4)
+    #print("my.txt")  # Replace file.txt with your file
+    multiplication_pattern(5)
+    number_pyramid(5)
     triangle(5)
