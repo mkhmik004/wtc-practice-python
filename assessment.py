@@ -4,17 +4,17 @@
 # Then using this function access the file and print as well as return your name.
 
 def printName(file_name):
-   file=open(file_name,'w')
-   name='Tumi'
-   file.write(name)
-#printName('test_name.txt')
+   file=open(file_name,'r')
+   for i in file:
+       return i
+
 
 def multiplication_pattern(height):
     for i in range(1,height+1):
         for x in range(1,i+1):
             print(i*x,end ='  ')
         print()
-    #print()
+  
 
   
 
@@ -35,7 +35,7 @@ def triangle(height):
 
 
 if __name__ == "__main__":
-    #print("my.txt")  # Replace file.txt with your file
+    print(printName("test_name.txt"))  # Replace file.txt with your file
     multiplication_pattern(5)
     number_pyramid(5)
     triangle(5)
